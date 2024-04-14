@@ -1,0 +1,54 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  position: absolute;
+  background-color: aqua;
+  display: flex;
+
+}
+
+
+#weatherDiv{
+  justify-self: center;
+  display: flex;
+  width: 1400pxrs;
+  padding: 5px;
+  flex-direction: column;
+  justify-content: center;
+  
+  color:blueviolet;
+  background-color: aliceblue;
+  border: 3px solid black;
+  font-size: 25px;
+}
+
+.weatherItems{
+  width: 700px;
+  height:auto;
+
+
+  border-style: solid;
+  border-radius: 15px;
+  font-size: 25px;
+  
+  
+}
+#weatherTable {
+ 
+
+}
+
+#weatherTable tr{
+  border: 1px solid navy ;
+  border-radius: 10px;
+  padding: 4px;
+  margin: 5px;
+ 
+}
+
+
+
+  
+  

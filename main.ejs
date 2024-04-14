@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <p1>Weather Application</p1>
+  <div  id = "weatherDiv">
+  <table id = "weatherTable" class="weatherItems">
+    <tr><th>City</th>
+    <th>Temperature</th>
+    <th>Weather</th>
+    <th>Humidity</th>
+    <th>---</th></tr>
+ 
+    <% weather.forEach((city)=>{ %>
+      <tr><td> <%= city.cityName %> </td>
+      <td> <%= city.temp %> </td>
+      <td> <%= city.descw %> </td>
+      <td> <%= city.humidity %> </td>
+      <img src = <% city.imgurl %>> </tr>
+
+    <% }) %>
+
+  </table> 
+  <form action="/addCity" method="POST" class="weatherItems">
+    <label for="cityName">Enter City Name:</label>
+    <div id="submitForm">
+      <input type="text" name="cityName" >
+      <button type="Submit"> Submit </button>
+    </div>
+    
+  </form></div>
+</body>
+</html>
